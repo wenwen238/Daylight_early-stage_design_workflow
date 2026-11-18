@@ -1,0 +1,27 @@
+**Design evaluation**
+
+**1. Result**
+| sDA300/50% | ASE1000,250h | LEED level | Source |
+|---|---|---|---|
+| 58.4% | 7.5% | 2 points (sDA >= 55%, ASE <= 10%) | MLP ensemble |
+
+**2. Design inputs**
+Windows on: north, west; floor-to-ceiling window, 1.05 m wide × 3.00 m high, sill 0.00 m; overhang 0.62 m.
+Input coverage check: passed (inside the sampled design space).
+
+**3. Basis of the result**
+MLP prediction accepted: no LEED threshold within the 90% error margins.
+
+| Metric | Prediction | 90% range | Thresholds in range | Spread level |
+|---|---|---|---|---|
+| sDA300/50% | 58.4% | 56.4–60.4% | none | medium (0.65 pp) |
+| ASE1000,250h | 7.5% | 6.1–8.8% | none | low (0.29 pp) |
+
+**4. Daylight maps**
+Predicted 10 × 10 maps of DA300 and of direct-sun hours (PCA + MLP). They are advisory and do not affect the decision.
+
+**5. Notes**
+Warnings: none. The LEED level is a comparative benchmark, not a certification result.
+
+**6. Next step**
+2 points reached; sDA would have to reach 75% for 3 points (now 58.4%). You can ask for suggested changes, or change the design and evaluate it again.

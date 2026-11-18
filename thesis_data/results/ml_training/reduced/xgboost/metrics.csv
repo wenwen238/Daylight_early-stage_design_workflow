@@ -1,0 +1,5 @@
+target,split,R2,MAE_percent_points,RMSE_percent_points,n_cases
+sDA_300_50_percent,train,0.998814,0.810655,1.162467,448
+sDA_300_50_percent,test,0.965859,4.389153,6.462543,112
+ASE_1000_250_percent,train,0.999495,0.277293,0.428410,448
+ASE_1000_250_percent,test,0.981435,1.573307,2.758270,112

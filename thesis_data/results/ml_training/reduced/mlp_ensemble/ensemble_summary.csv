@@ -1,0 +1,3 @@
+target,member1_matches_saved_model,ensemble_mean_MAE,ensemble_mean_RMSE,member_MAE_min,member_MAE_max,std_mean,std_median,std_max,abs_error_median,share_within_1std,share_within_2std,spearman_std_vs_abs_error
+sDA_300_50_percent,True,0.898281,1.404765,1.070227,1.125060,0.837176,0.729683,2.705246,0.571698,0.633929,0.875000,0.628881
+ASE_1000_250_percent,True,0.636966,1.029337,0.665254,0.769830,0.419502,0.406350,1.023234,0.400375,0.500000,0.741071,0.368587

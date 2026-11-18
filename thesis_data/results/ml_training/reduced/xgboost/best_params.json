@@ -1,0 +1,22 @@
+{
+  "sDA_300_50_percent": {
+    "regressor__colsample_bytree": 0.9883835308317579,
+    "regressor__learning_rate": 0.026824250089337587,
+    "regressor__max_depth": 12,
+    "regressor__min_child_weight": 5,
+    "regressor__n_estimators": 400,
+    "regressor__reg_alpha": 1.0,
+    "regressor__reg_lambda": 0.0016846923213715342,
+    "regressor__subsample": 0.6983875724320141
+  },
+  "ASE_1000_250_percent": {
+    "regressor__colsample_bytree": 0.9604244501587058,
+    "regressor__learning_rate": 0.10748125451692044,
+    "regressor__max_depth": 5,
+    "regressor__min_child_weight": 2,
+    "regressor__n_estimators": 1500,
+    "regressor__reg_alpha": 0.0,
+    "regressor__reg_lambda": 98.0960585146138,
+    "regressor__subsample": 0.6120960510455491
+  }
+}

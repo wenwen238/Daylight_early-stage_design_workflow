@@ -1,0 +1,23 @@
+{
+  "members": 5,
+  "seeds": [
+    20260924,
+    20260925,
+    20260926,
+    20260927,
+    20260928
+  ],
+  "hyperparameters": "reduced/mlp/best_params.json",
+  "training_cases": 448,
+  "test_cases": 112,
+  "feature_set": "reduced",
+  "package_versions": {
+    "python": "3.12.5",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "numpy": "2.4.5",
+    "pandas": "3.0.6",
+    "joblib": "1.6.0"
+  },
+  "elapsed_s": 25.46504639997147
+}

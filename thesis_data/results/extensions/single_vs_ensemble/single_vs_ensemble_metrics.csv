@@ -1,0 +1,5 @@
+model,target,MAE_pp,RMSE_pp,R2
+single,sDA_300_50_percent,1.0854,1.6644,0.9977
+single,ASE_1000_250_percent,0.7526,1.1941,0.9965
+ensemble,sDA_300_50_percent,0.8983,1.4048,0.9984
+ensemble,ASE_1000_250_percent,0.6370,1.0293,0.9974

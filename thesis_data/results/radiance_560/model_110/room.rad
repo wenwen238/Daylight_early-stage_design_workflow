@@ -1,0 +1,252 @@
+void plastic wall_mat
+0
+0
+5 0.5 0.5 0.5 0 0
+
+void plastic ceiling_mat
+0
+0
+5 0.7 0.7 0.7 0 0
+
+void plastic overhang_mat
+0
+0
+5 0.3 0.3 0.3 0 0
+
+void plastic ground_mat
+0
+0
+5 0.1 0.1 0.1 0 0
+
+void plastic floor_mat
+0
+0
+5 0.2 0.2 0.2 0 0
+
+void glass glass
+0
+0
+3 0.7082 0.7082 0.7082
+
+floor_mat polygon floor
+0
+0
+12
+  0 0 0  6.0 0 0  6.0 6.0 0  0 6.0 0
+
+ceiling_mat polygon ceiling
+0
+0
+12
+  0 0 3.0  0 6.0 3.0  6.0 6.0 3.0  6.0 0 3.0
+
+wall_mat polygon south
+0
+0
+12
+  0 0 3.0  0 0 0  6.0 0 0  6.0 0 3.0
+
+wall_mat polygon north_wall0
+0
+0
+12
+  0 6.0 0.9  0 6.0 0  2.19 6.0 0  2.19 6.0 0.9
+
+wall_mat polygon north_wall1
+0
+0
+12
+  0 6.0 2.71  0 6.0 0.9  2.19 6.0 0.9  2.19 6.0 2.71
+
+wall_mat polygon north_wall2
+0
+0
+12
+  0 6.0 3.0  0 6.0 2.71  2.19 6.0 2.71  2.19 6.0 3.0
+
+wall_mat polygon north_wall3
+0
+0
+12
+  2.19 6.0 0.9  2.19 6.0 0  3.81 6.0 0  3.81 6.0 0.9
+
+glass polygon north_win4
+0
+0
+12
+  2.19 6.0 2.71  2.19 6.0 0.9  3.81 6.0 0.9  3.81 6.0 2.71
+
+wall_mat polygon north_wall5
+0
+0
+12
+  2.19 6.0 3.0  2.19 6.0 2.71  3.81 6.0 2.71  3.81 6.0 3.0
+
+wall_mat polygon north_wall6
+0
+0
+12
+  3.81 6.0 0.9  3.81 6.0 0  6.0 6.0 0  6.0 6.0 0.9
+
+wall_mat polygon north_wall7
+0
+0
+12
+  3.81 6.0 2.71  3.81 6.0 0.9  6.0 6.0 0.9  6.0 6.0 2.71
+
+wall_mat polygon north_wall8
+0
+0
+12
+  3.81 6.0 3.0  3.81 6.0 2.71  6.0 6.0 2.71  6.0 6.0 3.0
+
+wall_mat polygon east_wall0
+0
+0
+12
+  6.0 0 0  6.0 0 0.9  6.0 2.19 0.9  6.0 2.19 0
+
+wall_mat polygon east_wall1
+0
+0
+12
+  6.0 0 0.9  6.0 0 2.71  6.0 2.19 2.71  6.0 2.19 0.9
+
+wall_mat polygon east_wall2
+0
+0
+12
+  6.0 0 2.71  6.0 0 3.0  6.0 2.19 3.0  6.0 2.19 2.71
+
+wall_mat polygon east_wall3
+0
+0
+12
+  6.0 2.19 0  6.0 2.19 0.9  6.0 3.81 0.9  6.0 3.81 0
+
+glass polygon east_win4
+0
+0
+12
+  6.0 2.19 0.9  6.0 2.19 2.71  6.0 3.81 2.71  6.0 3.81 0.9
+
+wall_mat polygon east_wall5
+0
+0
+12
+  6.0 2.19 2.71  6.0 2.19 3.0  6.0 3.81 3.0  6.0 3.81 2.71
+
+wall_mat polygon east_wall6
+0
+0
+12
+  6.0 3.81 0  6.0 3.81 0.9  6.0 6.0 0.9  6.0 6.0 0
+
+wall_mat polygon east_wall7
+0
+0
+12
+  6.0 3.81 0.9  6.0 3.81 2.71  6.0 6.0 2.71  6.0 6.0 0.9
+
+wall_mat polygon east_wall8
+0
+0
+12
+  6.0 3.81 2.71  6.0 3.81 3.0  6.0 6.0 3.0  6.0 6.0 2.71
+
+wall_mat polygon west_wall0
+0
+0
+12
+  0 2.19 0  0 2.19 0.9  0 0 0.9  0 0 0
+
+wall_mat polygon west_wall1
+0
+0
+12
+  0 2.19 0.9  0 2.19 2.71  0 0 2.71  0 0 0.9
+
+wall_mat polygon west_wall2
+0
+0
+12
+  0 2.19 2.71  0 2.19 3.0  0 0 3.0  0 0 2.71
+
+wall_mat polygon west_wall3
+0
+0
+12
+  0 3.81 0  0 3.81 0.9  0 2.19 0.9  0 2.19 0
+
+glass polygon west_win4
+0
+0
+12
+  0 3.81 0.9  0 3.81 2.71  0 2.19 2.71  0 2.19 0.9
+
+wall_mat polygon west_wall5
+0
+0
+12
+  0 3.81 2.71  0 3.81 3.0  0 2.19 3.0  0 2.19 2.71
+
+wall_mat polygon west_wall6
+0
+0
+12
+  0 6.0 0  0 6.0 0.9  0 3.81 0.9  0 3.81 0
+
+wall_mat polygon west_wall7
+0
+0
+12
+  0 6.0 0.9  0 6.0 2.71  0 3.81 2.71  0 3.81 0.9
+
+wall_mat polygon west_wall8
+0
+0
+12
+  0 6.0 2.71  0 6.0 3.0  0 3.81 3.0  0 3.81 2.71
+
+
+overhang_mat polygon overhang_north
+0
+0
+12
+  2.19 6 2.71  3.81 6 2.71  3.81 7.35 2.71  2.19 7.35 2.71
+
+overhang_mat polygon overhang_east
+0
+0
+12
+  6 2.19 2.71  6 3.81 2.71  7.35 3.81 2.71  7.35 2.19 2.71
+
+overhang_mat polygon overhang_west
+0
+0
+12
+  0 2.19 2.71  0 3.81 2.71  -1.35 3.81 2.71  -1.35 2.19 2.71
+
+ground_mat polygon ground_south
+0
+0
+12
+  -30 -30 0  36 -30 0  36 0 0  -30 0 0
+
+ground_mat polygon ground_north
+0
+0
+12
+  -30 6 0  36 6 0  36 36 0  -30 36 0
+
+ground_mat polygon ground_west
+0
+0
+12
+  -30 0 0  0 0 0  0 6 0  -30 6 0
+
+ground_mat polygon ground_east
+0
+0
+12
+  6 0 0  36 0 0  36 6 0  6 6 0

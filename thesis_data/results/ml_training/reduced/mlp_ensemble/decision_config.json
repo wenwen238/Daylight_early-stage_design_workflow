@@ -1,0 +1,29 @@
+{
+  "coverage_level": 0.9,
+  "n_test_cases": 112,
+  "margins_pp": {
+    "sDA_300_50_percent": 2.0033616000000003,
+    "ASE_1000_250_percent": 1.3412811000000031
+  },
+  "spread_levels_pp": {
+    "sDA_300_50_percent": {
+      "low_below": 0.498022,
+      "high_above": 1.092101,
+      "group_MAE_pp": [
+        0.29740594736842063,
+        1.0280231891891891,
+        1.3856546486486485
+      ]
+    },
+    "ASE_1000_250_percent": {
+      "low_below": 0.35641,
+      "high_above": 0.461594,
+      "group_MAE_pp": [
+        0.3962780789473686,
+        0.5525108378378377,
+        0.968614891891892
+      ]
+    }
+  },
+  "source": "thesis_data/results/ml_training/reduced/mlp_ensemble/ensemble_test_predictions.csv"
+}

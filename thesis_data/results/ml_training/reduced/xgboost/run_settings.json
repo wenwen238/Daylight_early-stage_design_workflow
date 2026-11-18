@@ -1,0 +1,49 @@
+{
+  "model": "XGBoost",
+  "random_state": 20260924,
+  "n_cases": 560,
+  "split": "80/20 stratified by stratum_id",
+  "tuning": "RandomizedSearchCV, 60 configurations, 5-fold CV on the training cases stratified by stratum_id, selection by mean CV RMSE",
+  "prediction_clip": [
+    0.0,
+    100.0
+  ],
+  "feature_set": "reduced",
+  "features": [
+    "has_north_window",
+    "has_east_window",
+    "has_south_window",
+    "has_west_window",
+    "sill_height_m",
+    "window_width_m",
+    "window_height_m",
+    "overhang_depth_m"
+  ],
+  "targets": [
+    "sDA_300_50_percent",
+    "ASE_1000_250_percent"
+  ],
+  "search_space": {
+    "regressor__n_estimators": "[200, 400, 800, 1500, 3000, 5000]",
+    "regressor__max_depth": "[2, 3, 4, 5, 6, 8, 10, 12]",
+    "regressor__learning_rate": "<scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x000001E57F840D70>",
+    "regressor__subsample": "<scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x000001E54503F0B0>",
+    "regressor__colsample_bytree": "<scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x000001E545582930>",
+    "regressor__min_child_weight": "[1, 2, 5, 10, 20, 40]",
+    "regressor__reg_lambda": "<scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x000001E5455826C0>",
+    "regressor__reg_alpha": "[0.0, 0.01, 0.1, 1.0]"
+  },
+  "saved_models": [
+    "model_sDA_300_50_percent.joblib",
+    "model_ASE_1000_250_percent.joblib"
+  ],
+  "package_versions": {
+    "python": "3.12.5",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "numpy": "2.4.5",
+    "pandas": "3.0.6",
+    "joblib": "1.6.0"
+  },
+  "elapsed_s": 34.24356510001235
+}

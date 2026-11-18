@@ -1,0 +1,3 @@
+target,n_configurations,cv_folds,cv_R2_mean,cv_R2_std,cv_MAE_mean,cv_MAE_std,cv_RMSE_mean,cv_RMSE_std,tuning_time_s
+sDA_300_50_percent,1,5,0.873419,0.005315,9.316397,0.434042,11.983814,0.346823,10.039833
+ASE_1000_250_percent,1,5,0.887594,0.014988,4.973364,0.553983,6.350493,0.629789,8.797346

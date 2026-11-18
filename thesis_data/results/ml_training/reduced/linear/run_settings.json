@@ -1,0 +1,42 @@
+{
+  "model": "Linear regression",
+  "random_state": 20260924,
+  "n_cases": 560,
+  "split": "80/20 stratified by stratum_id",
+  "tuning": "no hyperparameters tuned; 5-fold CV on the training cases for evaluation only",
+  "prediction_clip": [
+    0.0,
+    100.0
+  ],
+  "feature_set": "reduced",
+  "features": [
+    "has_north_window",
+    "has_east_window",
+    "has_south_window",
+    "has_west_window",
+    "sill_height_m",
+    "window_width_m",
+    "window_height_m",
+    "overhang_depth_m"
+  ],
+  "targets": [
+    "sDA_300_50_percent",
+    "ASE_1000_250_percent"
+  ],
+  "search_space": {
+    "regressor__fit_intercept": "[True]"
+  },
+  "saved_models": [
+    "model_sDA_300_50_percent.joblib",
+    "model_ASE_1000_250_percent.joblib"
+  ],
+  "package_versions": {
+    "python": "3.12.5",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "numpy": "2.4.5",
+    "pandas": "3.0.6",
+    "joblib": "1.6.0"
+  },
+  "elapsed_s": 19.554801499994937
+}

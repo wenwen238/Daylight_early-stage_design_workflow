@@ -1,0 +1,49 @@
+{
+  "method": "PCA of the training maps + five-seed MLP ensemble predicting the PCA scores",
+  "members": 5,
+  "seeds": [
+    20260924,
+    20260925,
+    20260926,
+    20260927,
+    20260928
+  ],
+  "points_per_map": 100,
+  "grid": "10 x 10 cell centres at 0.3, 0.9, ..., 5.7 m; rows south to north, columns west to east; bilinear interpolation of the 32 x 32 Radiance maps",
+  "maps": {
+    "da300": {
+      "file": "da300_map.npy",
+      "scale": 100.0,
+      "valid_range": [
+        0.0,
+        100.0
+      ],
+      "unit": "%",
+      "hyperparameters_of": "sDA_300_50_percent",
+      "pca_components": 10
+    },
+    "ase_hours": {
+      "file": "ase_hours_map.npy",
+      "scale": 1.0,
+      "valid_range": [
+        0.0,
+        3650.0
+      ],
+      "unit": "h",
+      "hyperparameters_of": "ASE_1000_250_percent",
+      "pca_components": 15
+    }
+  },
+  "training_cases": 448,
+  "test_cases": 112,
+  "feature_set": "reduced",
+  "package_versions": {
+    "python": "3.12.5",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "numpy": "2.4.5",
+    "pandas": "3.0.6",
+    "joblib": "1.6.0"
+  },
+  "elapsed_s": 125.83564350008965
+}

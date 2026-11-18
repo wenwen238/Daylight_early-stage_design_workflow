@@ -1,0 +1,69 @@
+{
+  "purpose": "independent check of accuracy, 90 % margins, decision rule and suggestions",
+  "created": "2026-11-04 23:14:08",
+  "seed": 20261104,
+  "pool_size": 200000,
+  "group_sizes": {
+    "A": 99,
+    "B": 29,
+    "C": 19
+  },
+  "margins_pp_fixed_from_the_test_set": {
+    "sDA_300_50_percent": 2.0033616000000003,
+    "ASE_1000_250_percent": 1.3412811000000031
+  },
+  "rules": [
+    "designs and predictions are fixed before any simulation",
+    "the results do not change the models, the margins or the rule",
+    "general coverage is estimated from group A only",
+    "groups B and C are selected on purpose and are reported separately"
+  ],
+  "group_B_selection": [
+    {
+      "threshold": "sDA 55%",
+      "cell": "inside",
+      "available_decisive": 884,
+      "available_any": 3645,
+      "used": "decisive"
+    },
+    {
+      "threshold": "sDA 55%",
+      "cell": "outside",
+      "available_decisive": 932,
+      "available_any": 3643,
+      "used": "decisive"
+    },
+    {
+      "threshold": "sDA 75%",
+      "cell": "inside",
+      "available_decisive": 44,
+      "available_any": 3969,
+      "used": "decisive"
+    },
+    {
+      "threshold": "sDA 75%",
+      "cell": "outside",
+      "available_decisive": 62,
+      "available_any": 4139,
+      "used": "decisive"
+    },
+    {
+      "threshold": "ASE 10%",
+      "cell": "inside",
+      "available_decisive": 4031,
+      "available_any": 15066,
+      "used": "decisive"
+    },
+    {
+      "threshold": "ASE 10%",
+      "cell": "outside",
+      "available_decisive": 4203,
+      "available_any": 15251,
+      "used": "decisive"
+    }
+  ],
+  "group_C_selection": {
+    "starts_tried": 24,
+    "skipped_no_target": 1
+  }
+}

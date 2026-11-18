@@ -1,0 +1,23 @@
+{
+  "n_cases": 560,
+  "sDA": {
+    "min": 1.07421875,
+    "median": 74.560546875,
+    "mean": 64.84688895089286,
+    "max": 100.0,
+    "cases_at_100": 71,
+    "below_55": 211,
+    "55_to_75": 72,
+    "at_least_75": 277
+  },
+  "ASE": {
+    "min": 0.0,
+    "median": 17.08984375,
+    "mean": 23.376116071428573,
+    "max": 88.18359375,
+    "cases_at_0": 40,
+    "at_most_10": 164
+  },
+  "sDA_at_least_55_and_ASE_at_most_10": 14,
+  "sDA_at_least_75_and_ASE_at_most_10": 2
+}

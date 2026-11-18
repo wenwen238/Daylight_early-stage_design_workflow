@@ -1,0 +1,22 @@
+{
+  "sDA_300_50_percent": {
+    "regressor__regressor__activation": "relu",
+    "regressor__regressor__alpha": 0.007265497640532402,
+    "regressor__regressor__batch_size": 32,
+    "regressor__regressor__hidden_layer_sizes": [
+      128,
+      64
+    ],
+    "regressor__regressor__learning_rate_init": 0.006039008405232554
+  },
+  "ASE_1000_250_percent": {
+    "regressor__regressor__activation": "tanh",
+    "regressor__regressor__alpha": 0.0016208040624819849,
+    "regressor__regressor__batch_size": 32,
+    "regressor__regressor__hidden_layer_sizes": [
+      64,
+      64
+    ],
+    "regressor__regressor__learning_rate_init": 0.0008638004858620956
+  }
+}

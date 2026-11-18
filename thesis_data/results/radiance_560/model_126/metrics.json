@@ -1,0 +1,39 @@
+{
+  "model_id": "model_126",
+  "stratum_id": "adjacent_east_south__conventional__overhang",
+  "facade_configuration": "two_adjacent",
+  "reference_orientation": "east",
+  "active_facades": "east;south",
+  "window_type": "conventional",
+  "sill_height_m": 0.9,
+  "window_width_m": 0.65,
+  "window_height_m": 0.79,
+  "overhang_present": true,
+  "overhang_depth_m": 0.54,
+  "sensor_grid": "32x32",
+  "workplane_z_m": 0.76,
+  "occupied_hours": 3650,
+  "sun_sources": 3307,
+  "mean_lux_occupied": 272.9166564941406,
+  "sDA_300_50_percent": 7.421875,
+  "ASE_1000_250_percent": 4.4921875,
+  "max_direct_sun_hours_over_1000": 844,
+  "radiance_params": "sky: -ab 5 -ad 512 -as 256 -lw 0.0001; sun: -ab 0",
+  "fixed_inputs": {
+    "ceiling": 0.7,
+    "walls": 0.5,
+    "floor": 0.2,
+    "overhang": 0.3,
+    "ground": 0.1,
+    "ground_extent_m": 30.0,
+    "glazing_vt": 0.65
+  },
+  "timings_s": {
+    "oconv_s": 0.09402329998556525,
+    "rcontrib_sky_s": 6.156049499986693,
+    "rcontrib_sun_s": 3.3045852000359446,
+    "matrix_s": 21.836728100082837
+  },
+  "total_model_s": 31.786927599925548,
+  "worker_peak_memory_mb": 177.48828125
+}

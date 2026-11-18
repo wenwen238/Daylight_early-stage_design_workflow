@@ -1,0 +1,75 @@
+{
+  "report": "**Design evaluation**\n\n**1. Result**\n| sDA300/50% | ASE1000,250h | LEED level | Source |\n|---|---|---|---|\n| 55.1% | 7.2% | 2 points (sDA >= 55%, ASE <= 10%) | Radiance simulation |\n\n**2. Design inputs**\nWindows on: north, south; floor-to-ceiling window, 0.70 m wide × 3.00 m high, sill 0.00 m; overhang 1.28 m.\nInput coverage check: passed (inside the sampled design space).\n\n**3. Basis of the result**\nRadiance simulation: a LEED threshold lies within the 90% range of a prediction, so the LEED outcome is uncertain.\n\n| Metric | Prediction | 90% range | Thresholds in range | Spread level | Radiance |\n|---|---|---|---|---|---|\n| sDA300/50% | 54.7% | 52.7–56.7% | 55% | high (2.35 pp) | 55.1% |\n| ASE1000,250h | 7.0% | 5.7–8.3% | none | high (0.65 pp) | 7.2% |\n\nSimulation files: thesis_data/results/extensions/workflow_examples/B003_radiance_run\n\n**4. Daylight maps**\nSimulated 32 × 32 maps of DA300 and of direct-sun hours from the Radiance run.\n\n**5. Notes**\nWarnings: none. The LEED level is a comparative benchmark, not a certification result.\n\n**6. Next step**\n2 points reached; sDA would have to reach 75% for 3 points (now 55.1%). You can ask for suggested changes, or change the design and evaluate it again.",
+  "design": {
+    "active_facades": [
+      "north",
+      "south"
+    ],
+    "window_type": "floor_to_ceiling",
+    "sill_height_m": 0.0,
+    "window_width_m": 0.7,
+    "window_height_m": 3.0,
+    "overhang_depth_m": 1.28
+  },
+  "coverage": {
+    "valid_geometry": true,
+    "in_design_space": true,
+    "problems": [],
+    "outside": []
+  },
+  "warnings": [
+    "high uncertainty for sDA (high spread level): you may want to confirm it with a Radiance simulation",
+    "high uncertainty for ASE (high spread level): you may want to confirm it with a Radiance simulation"
+  ],
+  "mlp": {
+    "sDA_300_50_percent": {
+      "prediction": 54.74,
+      "margin_pp": 2.0,
+      "range": [
+        52.73,
+        56.74
+      ],
+      "thresholds_in_range": [
+        55.0
+      ],
+      "spread_pp": 2.353,
+      "spread_level": "high",
+      "members": [
+        57.528,
+        51.17,
+        55.846,
+        54.988,
+        54.152
+      ]
+    },
+    "ASE_1000_250_percent": {
+      "prediction": 7.0,
+      "margin_pp": 1.34,
+      "range": [
+        5.66,
+        8.34
+      ],
+      "thresholds_in_range": [],
+      "spread_pp": 0.652,
+      "spread_level": "high",
+      "members": [
+        5.934,
+        7.069,
+        7.43,
+        6.947,
+        7.61
+      ]
+    }
+  },
+  "decision": "radiance",
+  "needs_radiance": true,
+  "reason": "the LEED outcome is uncertain: sDA 54.7% +/- 2.0 contains [55.0]",
+  "final": {
+    "source": "Radiance simulation",
+    "sDA_300_50_percent": 55.1,
+    "ASE_1000_250_percent": 7.2,
+    "leed_level": "2 points (sDA >= 55%, ASE <= 10%)"
+  },
+  "radiance_output": "thesis_data/results/extensions/workflow_examples/B003_radiance_run",
+  "elapsed_s": 27.3850117999973
+}

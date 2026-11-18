@@ -1,0 +1,46 @@
+{
+  "model": "MLP",
+  "random_state": 20260924,
+  "n_cases": 560,
+  "split": "80/20 stratified by stratum_id",
+  "tuning": "RandomizedSearchCV, 60 configurations, 5-fold CV on the training cases stratified by stratum_id, selection by mean CV RMSE",
+  "prediction_clip": [
+    0.0,
+    100.0
+  ],
+  "feature_set": "reduced",
+  "features": [
+    "has_north_window",
+    "has_east_window",
+    "has_south_window",
+    "has_west_window",
+    "sill_height_m",
+    "window_width_m",
+    "window_height_m",
+    "overhang_depth_m"
+  ],
+  "targets": [
+    "sDA_300_50_percent",
+    "ASE_1000_250_percent"
+  ],
+  "search_space": {
+    "regressor__regressor__hidden_layer_sizes": "[(32,), (64,), (128,), (32, 32), (64, 32), (64, 64), (128, 64), (128, 64, 32)]",
+    "regressor__regressor__activation": "['relu', 'tanh']",
+    "regressor__regressor__alpha": "<scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x00000265DEA70E60>",
+    "regressor__regressor__learning_rate_init": "<scipy.stats._distn_infrastructure.rv_continuous_frozen object at 0x00000265A471BF20>",
+    "regressor__regressor__batch_size": "[16, 32, 64]"
+  },
+  "saved_models": [
+    "model_sDA_300_50_percent.joblib",
+    "model_ASE_1000_250_percent.joblib"
+  ],
+  "package_versions": {
+    "python": "3.12.5",
+    "scikit-learn": "1.9.1",
+    "xgboost": "3.4.1",
+    "numpy": "2.4.5",
+    "pandas": "3.0.6",
+    "joblib": "1.6.0"
+  },
+  "elapsed_s": 195.55270520003978
+}

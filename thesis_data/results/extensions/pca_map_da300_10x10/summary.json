@@ -1,0 +1,40 @@
+{
+  "metric": "da300_map",
+  "unit": "pp",
+  "grid": "10 x 10 points, 0.6 m spacing (0.3-5.7 m), bilinear from the 32 x 32 Radiance maps",
+  "k_selected_by_cv": 10,
+  "k_for_99_5_percent_variance": 41,
+  "explained_variance_k": 0.9817550510013908,
+  "pca_mlp": {
+    "point_RMSE_pp": 4.964387182307342,
+    "point_MAE_pp": 3.1531231385140575,
+    "map_RMSE_median_pp": 4.27483153092332,
+    "map_RMSE_p90_pp": 7.775212246581257,
+    "map_RMSE_max_pp": 9.369500432852503,
+    "points_correct_side_percent": 97.25,
+    "sDA10_MAE_pp": 1.6428571428571428,
+    "sDA10_vs_sDA32_MAE_pp": 0.9035295758928574
+  },
+  "direct_mlp_100_outputs": {
+    "point_RMSE_pp": 4.14374623676893,
+    "point_MAE_pp": 2.4843171778469606,
+    "map_RMSE_median_pp": 3.4637286862813426,
+    "map_RMSE_p90_pp": 6.216632605145388,
+    "map_RMSE_max_pp": 9.424713858393483,
+    "points_correct_side_percent": 97.65178571428571,
+    "sDA10_MAE_pp": 1.2410714285714286,
+    "sDA10_vs_sDA32_MAE_pp": 0.9035295758928574
+  },
+  "test_map_mean": 59.732338649706456,
+  "test_share_of_zero_points": 0.021517857142857144,
+  "n_train": 448,
+  "n_test": 112,
+  "seeds": [
+    20260924,
+    20260925,
+    20260926,
+    20260927,
+    20260928
+  ],
+  "elapsed_s": 53.23305710009299
+}

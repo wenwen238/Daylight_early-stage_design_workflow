@@ -1,0 +1,337 @@
+{
+  "report": "**Design evaluation**\n\n**1. Result**\n| sDA300/50% | ASE1000,250h | LEED level | Source |\n|---|---|---|---|\n| 58.4% | 7.5% | 2 points (sDA >= 55%, ASE <= 10%) | MLP ensemble |\n\n**2. Design inputs**\nWindows on: north, west; floor-to-ceiling window, 1.05 m wide × 3.00 m high, sill 0.00 m; overhang 0.62 m.\nInput coverage check: passed (inside the sampled design space).\n\n**3. Basis of the result**\nMLP prediction accepted: no LEED threshold within the 90% error margins.\n\n| Metric | Prediction | 90% range | Thresholds in range | Spread level |\n|---|---|---|---|---|\n| sDA300/50% | 58.4% | 56.4–60.4% | none | medium (0.65 pp) |\n| ASE1000,250h | 7.5% | 6.1–8.8% | none | low (0.29 pp) |\n\n**4. Daylight maps**\nPredicted 10 × 10 maps of DA300 and of direct-sun hours (PCA + MLP). They are advisory and do not affect the decision.\n\n**5. Notes**\nWarnings: none. The LEED level is a comparative benchmark, not a certification result.\n\n**6. Next step**\n2 points reached; sDA would have to reach 75% for 3 points (now 58.4%). You can ask for suggested changes, or change the design and evaluate it again.",
+  "design": {
+    "active_facades": [
+      "north",
+      "west"
+    ],
+    "window_type": "floor_to_ceiling",
+    "sill_height_m": 0.0,
+    "window_width_m": 1.05,
+    "window_height_m": 3.0,
+    "overhang_depth_m": 0.62
+  },
+  "coverage": {
+    "valid_geometry": true,
+    "in_design_space": true,
+    "problems": [],
+    "outside": []
+  },
+  "warnings": [],
+  "mlp": {
+    "sDA_300_50_percent": {
+      "prediction": 58.36,
+      "margin_pp": 2.0,
+      "range": [
+        56.36,
+        60.37
+      ],
+      "thresholds_in_range": [],
+      "spread_pp": 0.653,
+      "spread_level": "medium",
+      "members": [
+        59.032,
+        59.069,
+        58.004,
+        58.089,
+        57.618
+      ]
+    },
+    "ASE_1000_250_percent": {
+      "prediction": 7.48,
+      "margin_pp": 1.34,
+      "range": [
+        6.14,
+        8.83
+      ],
+      "thresholds_in_range": [],
+      "spread_pp": 0.289,
+      "spread_level": "low",
+      "members": [
+        7.282,
+        7.936,
+        7.367,
+        7.235,
+        7.599
+      ]
+    }
+  },
+  "decision": "mlp",
+  "needs_radiance": false,
+  "reason": "no LEED threshold within the 90% error margins",
+  "final": {
+    "source": "MLP ensemble",
+    "sDA_300_50_percent": 58.4,
+    "ASE_1000_250_percent": 7.5,
+    "leed_level": "2 points (sDA >= 55%, ASE <= 10%)"
+  },
+  "mlp_maps": {
+    "points_m": [
+      0.3,
+      0.9,
+      1.5,
+      2.1,
+      2.7,
+      3.3,
+      3.9,
+      4.5,
+      5.1,
+      5.7
+    ],
+    "orientation": "rows from south (y = 0.3 m) to north, columns from west to east",
+    "note": "predicted maps (PCA + MLP), advisory only: the decision uses sDA and ASE of the 32 x 32 grid",
+    "da300": {
+      "unit": "%",
+      "accuracy": "test RMSE per point 5.0 pp",
+      "values": [
+        [
+          7.1,
+          17.0,
+          26.9,
+          34.9,
+          34.9,
+          31.3,
+          25.4,
+          16.8,
+          14.7,
+          13.5
+        ],
+        [
+          10.8,
+          31.0,
+          43.2,
+          45.1,
+          41.3,
+          36.6,
+          32.6,
+          25.1,
+          16.9,
+          14.4
+        ],
+        [
+          30.7,
+          59.9,
+          63.5,
+          59.1,
+          52.6,
+          46.5,
+          40.8,
+          34.8,
+          26.9,
+          19.4
+        ],
+        [
+          75.0,
+          82.4,
+          78.2,
+          71.5,
+          63.1,
+          56.3,
+          49.4,
+          43.3,
+          36.7,
+          28.3
+        ],
+        [
+          88.1,
+          86.3,
+          84.8,
+          79.6,
+          72.5,
+          64.3,
+          56.5,
+          49.2,
+          42.8,
+          38.2
+        ],
+        [
+          89.8,
+          89.7,
+          88.6,
+          85.2,
+          79.9,
+          73.2,
+          63.0,
+          54.2,
+          46.7,
+          43.0
+        ],
+        [
+          84.9,
+          89.4,
+          90.7,
+          89.1,
+          84.6,
+          78.8,
+          70.5,
+          59.4,
+          49.3,
+          42.0
+        ],
+        [
+          58.5,
+          83.1,
+          88.1,
+          90.8,
+          89.6,
+          84.8,
+          75.7,
+          63.7,
+          48.2,
+          38.0
+        ],
+        [
+          33.5,
+          64.5,
+          81.2,
+          90.6,
+          93.0,
+          89.5,
+          80.3,
+          62.2,
+          41.9,
+          29.7
+        ],
+        [
+          15.7,
+          39.6,
+          59.1,
+          84.8,
+          94.3,
+          91.7,
+          74.0,
+          42.6,
+          26.9,
+          21.2
+        ]
+      ]
+    },
+    "ase_hours": {
+      "unit": "h",
+      "accuracy": "test RMSE per point 17 h",
+      "values": [
+        [
+          0.0,
+          0.9,
+          0.2,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.1,
+          1.3,
+          0.0
+        ],
+        [
+          1.0,
+          0.0,
+          0.9,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.5,
+          0.4
+        ],
+        [
+          0.0,
+          2.0,
+          0.2,
+          1.1,
+          1.6,
+          0.9,
+          0.0,
+          0.3,
+          1.0,
+          0.0
+        ],
+        [
+          4.2,
+          0.0,
+          0.0,
+          1.2,
+          3.3,
+          0.9,
+          0.0,
+          0.0,
+          0.0,
+          0.5
+        ],
+        [
+          506.1,
+          159.0,
+          73.8,
+          36.6,
+          20.3,
+          4.6,
+          1.9,
+          0.9,
+          0.0,
+          3.5
+        ],
+        [
+          1131.5,
+          607.9,
+          325.4,
+          182.9,
+          97.9,
+          46.1,
+          16.1,
+          1.6,
+          0.0,
+          0.0
+        ],
+        [
+          387.2,
+          486.6,
+          321.7,
+          217.1,
+          130.5,
+          95.3,
+          52.3,
+          20.3,
+          3.8,
+          0.0
+        ],
+        [
+          46.0,
+          204.5,
+          233.7,
+          165.8,
+          122.5,
+          85.3,
+          72.7,
+          52.0,
+          22.9,
+          12.6
+        ],
+        [
+          24.1,
+          90.1,
+          143.9,
+          141.1,
+          107.4,
+          78.4,
+          55.9,
+          51.7,
+          40.3,
+          24.2
+        ],
+        [
+          40.9,
+          59.4,
+          79.5,
+          88.6,
+          103.5,
+          73.0,
+          56.5,
+          43.0,
+          33.3,
+          32.5
+        ]
+      ]
+    }
+  },
+  "elapsed_s": 0.4467659000074491
+}

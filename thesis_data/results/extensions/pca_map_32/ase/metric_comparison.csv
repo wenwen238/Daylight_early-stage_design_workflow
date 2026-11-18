@@ -1,0 +1,3 @@
+method,MAE_pp,RMSE_pp,max_abs_pp,bias_pp,share_within_1pp,share_within_2pp
+"PCA + MLP, 32 x 32 map -> metric",0.5153,0.7729,3.3203,-0.0148,0.8750,0.9643
+"5-MLP ensemble, metric directly",0.6370,1.0293,5.9346,-0.0265,0.7946,0.9643

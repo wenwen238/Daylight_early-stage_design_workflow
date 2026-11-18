@@ -1,0 +1,48 @@
+{
+  "model_id": "design_20261106_162708",
+  "active_facades": [
+    "north",
+    "south"
+  ],
+  "window_type": "floor_to_ceiling",
+  "sill_height_m": 0.0,
+  "window_width_m": 0.7,
+  "window_height_m": 3.0,
+  "overhang_present": true,
+  "overhang_depth_m": 1.28,
+  "overhang_length_m": 0.7,
+  "windows": [
+    {
+      "face": "north",
+      "x0_m": 2.65,
+      "x1_m": 3.35,
+      "z0_m": 0.0,
+      "z1_m": 3.0
+    },
+    {
+      "face": "south",
+      "x0_m": 2.65,
+      "x1_m": 3.35,
+      "z0_m": 0.0,
+      "z1_m": 3.0
+    }
+  ],
+  "shading": [
+    {
+      "type": "overhang",
+      "face": "north",
+      "x0_m": 2.65,
+      "x1_m": 3.35,
+      "z_m": 3.0,
+      "depth_m": 1.28
+    },
+    {
+      "type": "overhang",
+      "face": "south",
+      "x0_m": 2.65,
+      "x1_m": 3.35,
+      "z_m": 3.0,
+      "depth_m": 1.28
+    }
+  ]
+}

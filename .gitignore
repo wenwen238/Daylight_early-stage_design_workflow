@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+# regenerated automatically by 2_radiance/annual_metrics.py
+thesis_data/results/radiance_common/
+thesis_data/results/mcp_runs/
+thesis_data/results/radiance_560/run_log.txt
+thesis_data/results/extensions/independent_validation/run_log.txt
+*.pyc

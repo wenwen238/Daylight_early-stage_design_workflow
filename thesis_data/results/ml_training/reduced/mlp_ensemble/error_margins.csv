@@ -1,0 +1,4 @@
+level,sDA_margin_pp,ASE_margin_pp,cases_beyond_margin,flagged_sDA,flagged_ASE,flagged_total
+0.800,1.282,1.020,22,2,3,5
+0.900,2.003,1.341,11,5,9,12
+0.950,3.052,1.777,6,5,12,15

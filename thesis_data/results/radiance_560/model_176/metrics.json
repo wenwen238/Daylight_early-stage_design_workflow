@@ -1,0 +1,39 @@
+{
+  "model_id": "model_176",
+  "stratum_id": "opposite_north_south__conventional__no_overhang",
+  "facade_configuration": "two_opposite",
+  "reference_orientation": "north",
+  "active_facades": "north;south",
+  "window_type": "conventional",
+  "sill_height_m": 0.9,
+  "window_width_m": 1.85,
+  "window_height_m": 1.23,
+  "overhang_present": false,
+  "overhang_depth_m": 0.0,
+  "sensor_grid": "32x32",
+  "workplane_z_m": 0.76,
+  "occupied_hours": 3650,
+  "sun_sources": 3307,
+  "mean_lux_occupied": 1335.3721923828125,
+  "sDA_300_50_percent": 86.71875,
+  "ASE_1000_250_percent": 21.38671875,
+  "max_direct_sun_hours_over_1000": 2032,
+  "radiance_params": "sky: -ab 5 -ad 512 -as 256 -lw 0.0001; sun: -ab 0",
+  "fixed_inputs": {
+    "ceiling": 0.7,
+    "walls": 0.5,
+    "floor": 0.2,
+    "overhang": 0.3,
+    "ground": 0.1,
+    "ground_extent_m": 30.0,
+    "glazing_vt": 0.65
+  },
+  "timings_s": {
+    "oconv_s": 0.09574369993060827,
+    "rcontrib_sky_s": 6.723959899973124,
+    "rcontrib_sun_s": 3.6180974000599235,
+    "matrix_s": 22.20613410009537
+  },
+  "total_model_s": 32.97555010009091,
+  "worker_peak_memory_mb": 178.96484375
+}

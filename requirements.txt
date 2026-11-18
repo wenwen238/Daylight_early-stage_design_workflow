@@ -1,0 +1,13 @@
+# One environment for the whole workflow (Python 3.12).
+# Versions match the ones the saved models were trained with
+# (thesis_data/results/ml_training/reduced/*/run_settings.json); the .joblib models
+# should be loaded with the same scikit-learn version.
+numpy==2.4.5
+pandas==3.0.6
+scipy==1.18.1
+matplotlib==3.10.9
+scikit-learn==1.9.1
+xgboost==3.4.1
+joblib==1.6.0
+requests==2.34.0
+mcp==1.27.1

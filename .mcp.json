@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "rhino": {
+      "command": ".venv\\Scripts\\python.exe",
+      "args": ["5_mcp\\mcp_server.py"]
+    }
+  }
+}

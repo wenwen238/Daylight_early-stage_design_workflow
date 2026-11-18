@@ -1,0 +1,8 @@
+{
+  "finished": "2026-09-24 22:21:45",
+  "workers": 8,
+  "models_run": 557,
+  "failed": [],
+  "wall_time_s": 2419.123867199989,
+  "wall_time_per_model_s": 4.3431308208258335
+}

@@ -1,0 +1,20 @@
+{
+  "metric": "da300",
+  "grid": "32 x 32 Radiance sensors (0.1875 m, cell centres)",
+  "k_selected_by_cv": 10,
+  "k_for_99_5_percent_variance": 182,
+  "explained_variance_k": 0.9657894528250703,
+  "point_RMSE_pp": 6.101794370128354,
+  "point_MAE_pp": 3.7602202080187537,
+  "metric_check_max_diff_pp": 0.0,
+  "n_train": 448,
+  "n_test": 112,
+  "seeds": [
+    20260924,
+    20260925,
+    20260926,
+    20260927,
+    20260928
+  ],
+  "elapsed_s": 30.589489199919626
+}

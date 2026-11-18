@@ -1,0 +1,8 @@
+{
+  "sDA_300_50_percent": {
+    "regressor__fit_intercept": true
+  },
+  "ASE_1000_250_percent": {
+    "regressor__fit_intercept": true
+  }
+}
