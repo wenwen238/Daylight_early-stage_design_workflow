@@ -11,7 +11,8 @@ Models: MLP, XGBoost and linear regression with the hyperparameters selected on 
 training set (reduced/<model>/best_params.json); they are not re-tuned for each size.
 Predictions are clipped to 0-100 %, as everywhere else.
 
-Outputs (thesis_data/results/extensions/learning_curve/): every run, a summary per size and one figure.
+Outputs (thesis_data/results/extensions/learning_curve/): every run, a summary per size and one figure
+(thesis Fig. 4.17, drawn by thesis_data/figure_scripts/fig_learning_curve.py).
 """
 
 import json
@@ -80,29 +81,10 @@ def run_one(name, target, k, seed, train, test, feats):
 
 
 def figure(summary):
-    fig, axes = plt.subplots(1, 2, figsize=(7.4, 3.2))
-    for ax, t in zip(axes, common.TARGETS):
-        for name, (_, _, _, color) in MODELS.items():
-            s = summary[(summary.model == name) & (summary.target == t)].sort_values("n_train")
-            ax.fill_between(s.n_train, s.RMSE_min, s.RMSE_max, color=color, alpha=0.18, linewidth=0)
-            ax.plot(s.n_train, s.RMSE_mean, color=color, linewidth=1.8, marker="o", markersize=3.5, label=name)
-        ax.set_yscale("log")
-        ax.set_xticks(sorted(summary.n_train.unique()))
-        ax.set_xlabel("training cases (Radiance simulations)")
-        ax.set_title(common.TARGET_LABELS[t], loc="left")
-        ax.grid(True, which="both", color=GRID, linewidth=0.6)
-        ax.set_axisbelow(True)
-        for s_ in ("top", "right"):
-            ax.spines[s_].set_visible(False)
-        ax.yaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda v, _: f"{v:g}"))
-        ax.yaxis.set_minor_formatter(matplotlib.ticker.FuncFormatter(
-            lambda v, _: f"{v:g}" if str(v)[0] in "2357" else ""))
-    axes[0].set_ylabel("test RMSE [pp] (log scale)")
-    handles, labels = axes[0].get_legend_handles_labels()
-    fig.legend(handles, labels, loc="upper center", ncol=3, frameon=False, fontsize=8, bbox_to_anchor=(0.5, 1.05))
-    fig.tight_layout(w_pad=2.0)
-    fig.savefig(OUT / "fig_learning_curve.png", dpi=300, bbox_inches="tight")
-    plt.close(fig)
+    """Draw thesis Fig. 4.17 with thesis_data/figure_scripts/fig_learning_curve.py (linear axis, 0-16 pp)."""
+    sys.path.insert(0, str(ROOT / "thesis_data" / "figure_scripts"))
+    import fig_learning_curve  # noqa: E402
+    fig_learning_curve.draw(summary, OUT / "fig_learning_curve.png")
 
 
 def main():

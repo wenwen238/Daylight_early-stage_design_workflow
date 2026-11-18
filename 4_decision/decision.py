@@ -307,7 +307,7 @@ def with_radiance(result, metrics):
 # -- command line ---------------------------------------------------------------
 
 def check_test():
-    """Apply the rule to the 112 test cases (thesis Section 4.5.3 numbers)."""
+    """Apply the rule to the 112 test cases (thesis Section 4.4 numbers)."""
     d = pd.read_csv(config.ENSEMBLE_DIR / "ensemble_test_predictions.csv", dtype={"model_id": str})
     cases = {c["model_id"]: c for c in json.loads(config.CASES_JSON.read_text(encoding="utf-8"))["cases"]}
     n_cov, flagged, by = 0, [], {t: 0 for t in common.TARGETS}

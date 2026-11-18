@@ -2,7 +2,7 @@
 """Error margins and ensemble spread on the 112 test cases (thesis Section 4.4.2).
 
 Reads the output of train_mlp_ensemble.py and writes
-  fig_mlp_ensemble_error_margin.png   Fig. 4.28 (and error_margins.csv, Table 4.17)
+  fig_mlp_ensemble_error_margin.png   Fig. 4.28 (and error_margins.csv, Table 4.18)
   fig_mlp_ensemble_spread_groups.png  Fig. 4.29: mean absolute error in three equal-size spread groups
 """
 

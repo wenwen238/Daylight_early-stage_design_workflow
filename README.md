@@ -38,17 +38,17 @@ supporting analyses and figures of the thesis and are not needed to use the work
 
 | Thesis | Calculation | Figure script (`thesis_data/figure_scripts/`) | Results |
 |---|---|---|---|
-| Fig. 4.5 input distribution | — | `fig_data_distribution.py` | `thesis_data/results/extensions/data_distribution/` |
+| Fig. 4.9 distribution of the 560 results | — | `fig_data_distribution.py` | `thesis_data/results/extensions/data_distribution/` |
 | Fig. 4.6 grid convergence | `6_extensions/grid_convergence.py` | `fig_grid_convergence.py` | `thesis_data/results/extensions/grid_convergence/` |
-| Fig. 4.14–4.16, Tables 4.10–4.12 model comparison | `3_ml/train_linear.py`, `train_xgboost.py`, `train_mlp.py` | `fig_hyperparameter_search.py`, `fig_model_comparison.py` | `thesis_data/results/ml_training/reduced/` |
-| Fig. 4.17 learning curve | `6_extensions/learning_curve.py` | (drawn by the calculation) | `thesis_data/results/extensions/learning_curve/` |
-| Fig. 4.18, Table 4.13 single MLP vs ensemble | `3_ml/train_mlp_ensemble.py` | `fig_single_vs_ensemble.py` | `thesis_data/results/extensions/single_vs_ensemble/` |
-| Fig. 4.19–4.24, Table 4.14 map prediction (10 × 10) | `6_extensions/pca_map_prediction.py --metric da300` / `--metric ase`, `3_ml/train_map_ensemble.py` | (drawn by the calculation) | `thesis_data/results/extensions/pca_map_da300_10x10/`, `pca_map_ase_10x10/`, `thesis_data/results/ml_training/reduced/map_ensemble/` |
-| Table 4.15 sDA/ASE counted from 32 × 32 maps | `6_extensions/pca_map_32.py` | — | `thesis_data/results/extensions/pca_map_32/` |
+| Fig. 4.14–4.16, Tables 4.11–4.13 model comparison | `3_ml/train_linear.py`, `train_xgboost.py`, `train_mlp.py` | `fig_hyperparameter_search.py`, `fig_model_comparison.py` | `thesis_data/results/ml_training/reduced/` |
+| Fig. 4.17 learning curve | `6_extensions/learning_curve.py` | `fig_learning_curve.py` | `thesis_data/results/extensions/learning_curve/` |
+| Fig. 4.18, Table 4.14 single MLP vs ensemble | `3_ml/train_mlp_ensemble.py` | `fig_single_vs_ensemble.py` | `thesis_data/results/extensions/single_vs_ensemble/` |
+| Fig. 4.19–4.24, Table 4.15 map prediction (10 × 10) | `6_extensions/pca_map_prediction.py --metric da300` / `--metric ase`, `3_ml/train_map_ensemble.py` | (drawn by the calculation) | `thesis_data/results/extensions/pca_map_da300_10x10/`, `pca_map_ase_10x10/`, `thesis_data/results/ml_training/reduced/map_ensemble/` |
+| Table 4.16 sDA/ASE counted from 32 × 32 maps | `6_extensions/pca_map_32.py` | — | `thesis_data/results/extensions/pca_map_32/` |
 | Fig. 4.25, 4.26, Section 4.3.6 numbers | (held-out predictions computed by the figure script) | `fig_mlp_limitations.py` | `thesis_data/results/ml_training/reduced/mlp/limitations_numbers.json` |
-| Fig. 4.28, 4.29, Tables 4.17, 4.18 margins and spread | `4_decision/decision.py calibrate` | `fig_ensemble_uncertainty.py` | `thesis_data/results/ml_training/reduced/mlp_ensemble/` |
+| Fig. 4.28, 4.29, Tables 4.18, 4.19 margins and spread | `4_decision/decision.py calibrate` | `fig_ensemble_uncertainty.py` | `thesis_data/results/ml_training/reduced/mlp_ensemble/` |
 | Fig. 4.31 overhang 0–0.30 m | `6_extensions/overhang_gap_check.py` | (drawn by the calculation) | `thesis_data/results/extensions/overhang_gap/` |
-| Section 5.1 independent test (Fig. 5.1, group C, Tables 5.1, 5.2) | `6_extensions/independent_validation.py` | `fig_independent_groupC.py` | `thesis_data/results/extensions/independent_validation/` |
+| Section 5.1 independent test (Fig. 5.1, Fig. 5.2 group C, Tables 5.1, 5.2) | `6_extensions/independent_validation.py` | `fig_independent_groupC.py` | `thesis_data/results/extensions/independent_validation/` |
 | Section 5.2 and Appendix A, designs A046 and B003 | `6_extensions/workflow_examples_independent.py`, `workflow_examples_reports.py` | `fig_workflow_examples_maps.py` | `thesis_data/results/extensions/workflow_examples/` |
 
 Run every script from this folder, e.g. `.\.venv\Scripts\python.exe thesis_data/figure_scripts/fig_model_comparison.py`.

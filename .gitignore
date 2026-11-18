@@ -6,3 +6,6 @@ thesis_data/results/mcp_runs/
 thesis_data/results/radiance_560/run_log.txt
 thesis_data/results/extensions/independent_validation/run_log.txt
 *.pyc
+
+# third-party weather file: not redistributed, see thesis_data/inputs/README.md
+thesis_data/inputs/weather/*.epw

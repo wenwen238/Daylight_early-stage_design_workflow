@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Figure: distribution of sDA300/50% and ASE1000,250h over the 560 simulated cases.
+"""Figure: distribution of sDA300/50% and ASE1000,250h over the 560 simulated cases (thesis Fig. 4.9).
 
 (a) histogram of sDA with the LEED thresholds 55 % and 75 %, (b) histogram of ASE with the
 10 % threshold, (c) sDA against ASE, with the cases that meet both sDA >= 55 % and ASE <= 10 %
-highlighted. Reads the dataset only, no recalculation.
+highlighted. The histograms show the share of the 560 cases in each 5 % bin [%].
+Reads the dataset only, no recalculation.
 
     python thesis_data/figure_scripts/fig_data_distribution.py
 
@@ -53,20 +54,22 @@ def main():
     sda, ase = d["sDA_300_50_percent"].to_numpy(), d["ASE_1000_250_percent"].to_numpy()
     both = (sda >= 55) & (ase <= 10)
     bins = np.arange(0, 105, 5)                       # 5 % bins; 100 % falls in the last one
+    w = np.full(len(sda), 100.0 / len(sda))           # each case = 100/N %, so bar heights are % of cases
 
     fig, axes = plt.subplots(1, 3, figsize=(7.4, 2.7), gridspec_kw={"width_ratios": [1, 1, 1.1]})
     ax = axes[0]
-    ax.hist(np.minimum(sda, 99.999), bins=bins, color=BLUE, edgecolor="white", linewidth=1)
+    ax.hist(np.minimum(sda, 99.999), bins=bins, weights=w, color=BLUE, edgecolor="white", linewidth=1)
     threshold(ax, 55, "55 %")
     threshold(ax, 75, "75 %")
     ax.set_xlabel("sDA300/50% [%]")
-    ax.set_ylabel("number of cases")
+    ax.set_ylabel("share of cases [%]")
     ax.set_title("(a) sDA", loc="left", pad=12)
 
     ax = axes[1]
-    ax.hist(np.minimum(ase, 99.999), bins=bins, color=ORANGE, edgecolor="white", linewidth=1)
+    ax.hist(np.minimum(ase, 99.999), bins=bins, weights=w, color=ORANGE, edgecolor="white", linewidth=1)
     threshold(ax, 10, "10 %")
     ax.set_xlabel("ASE1000,250h [%]")
+    ax.set_ylabel("share of cases [%]")
     ax.set_title("(b) ASE", loc="left", pad=12)
 
     ax = axes[2]

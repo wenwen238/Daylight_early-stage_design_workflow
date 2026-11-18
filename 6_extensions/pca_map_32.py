@@ -7,7 +7,7 @@ Radiance grid itself, so the metric from the map uses the same definition as the
 and there is no grid error.
 
 Compared on the same 112 test cases with the 5-MLP ensemble that predicts sDA / ASE directly
-(3_ml/train_mlp_ensemble.py), thesis Table 4.15.
+(3_ml/train_mlp_ensemble.py), thesis Table 4.16.
 
     python 6_extensions/pca_map_32.py --metric da300
     python 6_extensions/pca_map_32.py --metric ase
